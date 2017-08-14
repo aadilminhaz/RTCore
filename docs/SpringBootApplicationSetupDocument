@@ -1,0 +1,42 @@
+Guide to Setup a Spring Boot Application from scratch
+
+Steps :
+
+Step 1: Download and install JAVA 8 and STS (with eclipse or just tool in eclipse)
+
+Step 2: Create a normal Maven project (normal JAR)
+
+Step 3: In POM add parent as
+
+ <!-- Inheriting Srping Boot Starting Properties, to save configuration in this project -->
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>1.4.2.RELEASE</version>
+  </parent>
+  
+  This will inherit all the pre-configured configuration of spirng boot, and we don't need to add different configuration in our project
+  
+Step 4: Add Spring Boot dependency (this will be a meta-dependency) : This will add all the required jars in  our project
+	
+	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  </dependencies>  
+  
+Step 5: Use JAVA 8 by adding following in the pom
+ 
+ 	<!-- Explicity Defining java version -->
+  <properties>
+  	<java.version>1.8</java.version>
+  </properties>
+  
+Step 6: At the Root package (e.g. com.rt.core) create an ApplicationStarter file with main method.
+  This will a @SpringBootApplication file and will initialize the whole application (even start a tomcat instance and deploy the project)
+
+Step 7:  Create a basic controller and annotate the file with @RestController and method with @RequestMapping
+
+Run the ApplicationStarter and your Rest API is ready
+------Basic Configuration Done-------- 
+  
