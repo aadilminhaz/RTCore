@@ -1,5 +1,7 @@
 Guide to Setup a Spring Boot Application from scratch
 
+Follow below steps or User SpringBoot Initilzr or ClI or IDE (create spring starter project)
+
 Steps :
 
 Step 1: Download and install JAVA 8 and STS (with eclipse or just tool in eclipse)
@@ -39,4 +41,31 @@ Step 7:  Create a basic controller and annotate the file with @RestController an
 
 Run the ApplicationStarter and your Rest API is ready
 ------Basic Configuration Done-------- 
+  
+  
+  
+  
+  ------To add appication.properties file----
+  To change the configuration of Spring Boot
+  
+  Step 1: create a file application.properties
+  
+  e.g. To change the port of tomcat
+  
+ 	 	add following line in application.properties
+  
+  		server.port = 8899
+  		
+  Check "common application properties" on web to get all the different available properties keys
+  -----End-----
+  
+  
+  ----DB Connection Spring Data JPA----
+  
+  Add JPA and Spring Data dependencies.
+  
+  Step1 : Create a new spring starter project.
+  Step2 : Select dependencies Web, SQL->JPA	, MySql
+  Step3 : copy new dependencies from pom.xml of new project to our actual project
+  
   

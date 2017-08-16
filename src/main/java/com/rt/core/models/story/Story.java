@@ -1,14 +1,19 @@
-package com.rt.core.models;
+package com.rt.core.models.story;
 
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Story {
 	
+	@Id
 	private String storyId;
 	private String storyName;
 	private String author;
-	private StoryPara storyIntro;
-	private List<StoryPara> storyLines;
+	//private StoryPara storyIntro;
+	//private List<StoryPara> storyLines;
 	
 	
 	public Story() {
@@ -20,8 +25,8 @@ public class Story {
 		this.storyId = storyId;
 		this.storyName = storyName;
 		this.author = author;
-		this.storyIntro = storyIntro;
-		this.storyLines = storyLines;
+		/*this.storyIntro = storyIntro;
+		this.storyLines = storyLines;*/
 	}
 
 	public String getStoryId() {
@@ -42,7 +47,7 @@ public class Story {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public StoryPara getStoryIntro() {
+/*	public StoryPara getStoryIntro() {
 		return storyIntro;
 	}
 	public void setStoryIntro(StoryPara storyIntro) {
@@ -53,5 +58,5 @@ public class Story {
 	}
 	public void setStoryLines(List<StoryPara> storyLines) {
 		this.storyLines = storyLines;
-	}
+	}*/
 }

@@ -5,12 +5,12 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.rt.core.models.Story;
-import com.rt.core.models.StoryPara;
+import com.rt.core.models.story.Story;
+import com.rt.core.models.story.StoryPara;
 
 @Component
 public class StoryPopulator {
-	
+	/*
 	public List<Story> populateStories() {
 		List<Story> stories = new ArrayList<Story>();
 		stories.add(populateStory());
@@ -32,7 +32,7 @@ public class StoryPopulator {
 		
 	}
 	
-	/**Temp Duplicate Story Populator, Delete after prototype is done*/
+	*//**Temp Duplicate Story Populator, Delete after prototype is done*//*
 	public Story populate2ndStory() {
 		StoryPara storyIntro2 = new StoryPara("01", "Money or Glory", "http://rt.com/octa/story02/img001.jpg", "Story Intro");
 		
@@ -46,7 +46,7 @@ public class StoryPopulator {
 		List<StoryPara> storyParaList = new ArrayList<StoryPara>();
 		
 		
-		/**Temp Populator*/
+		*//**Temp Populator*//*
 		
 		StoryPara storyPara1 = new StoryPara("02", "Fist Title", "http://rt.com/octa/story02/img001.jpg", "Story paragraph goes here");
 		StoryPara storyPara2 = new StoryPara("03", "Second Title", "http://rt.com/octa/story02/img002.jpg", "Story paragraph goes here");
@@ -66,5 +66,5 @@ public class StoryPopulator {
 		storyPara.setParaText("Para Content");
 		
 		return storyPara;
-	}
+	}*/
 }

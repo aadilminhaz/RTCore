@@ -1,4 +1,4 @@
-package com.rt.core.models;
+package com.rt.core.models.story;
 
 public class StoryPara {
 
